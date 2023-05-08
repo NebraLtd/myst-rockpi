@@ -1,0 +1,9 @@
+[Unit]
+Description=Update mysterium apt package
+
+[Service]
+Type=simple
+ExecStart=/opt/myst_update.sh
+
+[Install]
+WantedBy=multi-user.target

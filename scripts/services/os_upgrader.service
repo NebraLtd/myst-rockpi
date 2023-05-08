@@ -1,0 +1,9 @@
+[Unit]
+Description=update host os
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c '/usr/bin/curl https://raw.githubusercontent.com/NebraLtd/myst-rockpi/master/scripts/myst_os_upgrade.sh | bash'
+
+[Install]
+WantedBy=multi-user.target
